@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="icon" href="https://cdn.dribbble.com/users/5912/screenshots/1300524/attachments/181387/io7-isome-icon-P.png">
+    <link rel="stylesheet" href="css/client.css">
+    <script src="https://kit.fontawesome.com/f0add9272d.js"></script>
+</head>
+<body>
+    <main>
+        <div style="border-top-left-radius: 20px;border-top-right-radius: 20px;justify-content: space-between; align-items: center;padding: 0 50px;display: flex;width: 1400px; height: 50px; background-color: rgb(113, 106, 98);">
+            <p style="color: white; font-size: 18px; font-weight: 600;">
+                <i style="margin-right: 10px;" class="fa-solid fa-user"></i>
+                Thông tin học sinh
+            </p>
+            <a href="index.html">
+                <button id="logout" style="font-weight: 600;padding: 5px 10px; border-radius: 10px; border: none;">Đăng xuất</button>
+            </a>
+        </div>
+
+        <div style="width: 1400px; display: flex; gap: 100px; height: 670px;">
+            <div style="border-bottom-left-radius: 20px;;background-color: aliceblue; width: 300px;height: 670px">
+                <ul id="list">
+                    <li id="li1">
+                        <p>Xem lớp</p>
+                    </li>
+                    <li id="li2">
+                        <p>Xem lịch thi</p>
+                    </li>
+                    <li id="li3" style="background-color: antiquewhite;">
+                        <p>Xem điểm</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="div1" class="hidden" style="margin-top: 15px;width: 1400Px; display: flex; flex-direction: column; gap: 20px;">
+                <p>Danh sách điểm số sinh viên</p>
+                <div style="max-height: 600px; overflow-y:auto">
+                    <table id="lop-table" class="custom-table">
+                        <thead style="position: sticky;top: 0;">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã Sinh Viên</th>
+                            <th>Mã Môn Học</th>
+                            <th>Điểm</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!-- Thêm dòng tr cho mỗi bản ghi khác -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="client3.js"></script>
+</body>
+</html>

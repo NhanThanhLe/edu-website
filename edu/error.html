@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom</title>
+    <link rel="icon" href="https://cdn.dribbble.com/users/5912/screenshots/1300524/attachments/181387/io7-isome-icon-P.png">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="position: relative;">
+    <div style="position: absolute; width: 320px;text-align: center; height: 50px; margin: 500px 1140px;">
+        <p style="color: red;">Tài khoản hoặc mật khẩu không hợp lệ</p>
+        <br>
+        <p style="color: red;">Vui lòng nhập lại!</p>
+    </div>
+    <main>
+        <img style="width: 1100px; height: 720px" src="https://toigingiuvedep.vn/wp-content/uploads/2021/11/hinh-anh-lop-hoc-vui-ve-4.jpg" alt="">
+        <form action="login.php" method="post">
+            <p id="text"></p>
+            <input type="text" placeholder="Tài khoản/Mã sinh viên" name="username">
+            <input type="password" placeholder="Mật khẩu" name="password">
+            <div style="margin-top: -20px;width: 280px;height: 40px;display: flex; justify-content: space-between; align-items: center;">
+                <div style="width: 100px; height: 20px;display: flex; justify-content: center; align-items: center; gap: 5px;">
+                    <input style="width: 10px; height: 10px;" type="checkbox">
+                    <p style="font-size: 10px; font-weight: 400;">Ghi nhớ mật khẩu</p>
+                </div>
+
+                <a href="" style="font-size: 15px; color: rgb(138, 136, 201);">Đăng ký</a>
+            </div>
+            <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
